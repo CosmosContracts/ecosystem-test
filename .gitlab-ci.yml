@@ -57,3 +57,4 @@ prod_deploy:
     - ssh -o "StrictHostKeyChecking=no" ${PROD_SSH_USER}@${PROD_SSH_SERVER} "mkdir -p /tmp/juno/website"
     - scp -o "StrictHostKeyChecking=no" $(pwd)/scripts/prod_deploy.sh ${PROD_SSH_USER}@${PROD_SSH_SERVER}:/tmp/juno/website/prod_deploy.sh
     - ssh -o "StrictHostKeyChecking=no" ${PROD_SSH_USER}@${PROD_SSH_SERVER} "bash /tmp/juno/website/prod_deploy.sh"
+
